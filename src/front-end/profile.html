@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/profile.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="container">
+    <header class="header">
+      <div class="header__top">
+        <a href="/home/index.html" class="header__left">
+          <img src="../img/Logo.png" alt="" />
+          <p>BAO BAO</p>
+        </a>
+        <div class="header__right">
+          <button class="header__right__star">
+            <img src="img/Feature Balloon.png" alt="" />
+          </button>
+          <img src="img/Avatar.png" alt="" class="header__right__avatar" />
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Lê Chí Nhin
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Profile</a>
+              <a class="dropdown-item" href="#">Logout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="header__navbar">
+          <button type="button" class="btn btn-outline-dark">Hot</button>
+          <button type="button" class="btn btn-outline-dark">News</button>
+          <button type="button" class="btn btn-outline-dark">Video</button>
+          <button type="button" class="btn btn-outline-dark">Categories</button>
+        </div>
+
+        <div class="header__search">
+          <form class="form-inline">
+            <input
+              class="form-control header__search__input"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn my-2 my-sm-0 header__search__button"
+              type="submit"
+            >
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+          <i class="fa fa-bars header__search__burger" onclick="selectBurger()"> </i>
+        </div>
+      </div>
+
+      <div class="header__popup" id="burger">
+        <div class="header__tag">
+          <button class="header__tag__item">#Never give up</button>
+          <button class="header__tag__item">#Covid - 19</button>
+          <button class="header__tag__item">#Hướng về miền trung</button>
+        </div>
+        <div class="header__popup__category row">
+          <div class="col-3 header__popup__item">
+            <ul>
+              <li>| Xã hội</li>
+              <li>Thời sự</li>
+              <li>Giao thông</li>
+              <li>Môi trường - Khí hậu</li>
+            </ul>
+          </div>
+          <div class="col-3 header__popup__item">
+            <ul>
+              <li>| Văn hóa</li>
+              <li>Nghệ thuật</li>
+              <li>Ẩm thực</li>
+              <li>Du lịch</li>
+            </ul>
+          </div>
+          <div class="col-3 header__popup__item">
+            <ul>
+              <li>| Kinh tế</li>
+              <li>Lao động - Việc làm</li>
+              <li>Tài chính</li>
+              <li>Kế toán</li>
+              <li>Kinh doanh</li>
+            </ul>
+          </div>
+          <div class="col-3 header__popup__item">
+            <ul>
+              <li>| Giáo dục</li>
+              <li>Học bổng</li>
+              <li>Du học</li>
+            </ul>
+          </div>
+          <div class="col-3 header__popup__item">
+            <ul>
+              <li>| Thể thao</li>
+              <li>Bóng đá quốc tế</li>
+              <li>Bóng đá Việt Nam</li>
+              <li>Quần Vợt</li>
+              <li>Lịch thi đấu</li>
+            </ul>
+          </div>
+          <div class="col-3 header__popup__item">
+            <ul>
+              <li>| Xã hội</li>
+              <li>Thời sự</li>
+              <li>Giao thông</li>
+              <li>Môi trường - Khí hậu</li>
+            </ul>
+          </div>
+          <div class="col-3 header__popup__item">
+            <ul>
+              <li>| Xã hội</li>
+              <li>Thời sự</li>
+              <li>Giao thông</li>
+              <li>Môi trường - Khí hậu</li>
+            </ul>
+          </div>
+          <div class="col-3 header__popup__item">
+            <ul>
+              <li>| Xã hội</li>
+              <li>Thời sự</li>
+              <li>Giao thông</li>
+              <li>Môi trường - Khí hậu</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="profile">
+      <div class="profile__line">
+        <img src="../img/Logo.png" alt="" />
+        <p>Profile | |</p>
+      </div>
+      <div class="profile__body row">
+        <div class="profile__left col-4">
+          <div class="profile__left__user">
+            <img src="img/Avatar.png" alt="" />
+            <p>Lê Chí Nhin</p>
+          </div>
+          <div class="profile__left__tabs--active" id="tabCategory" onclick="selectCategory()">
+            <img src="img/Heart.png" alt="" />
+            <p>Interesting Categories</p>
+          </div>
+          <div class="profile__left__tabs" id="tabPublisher" onclick="selectPublisher()">
+            <img src="img/Glasses.png" alt="" />
+            <p>Following Publisher</p>
+          </div>
+          <div class="profile__left__tabs">
+            <img src="img/Heart.png" alt="" />
+            <p>Logout</p>
+          </div>
+        </div>
+        <div class="profile__right col-8">
+          <div id="category">
+            <div class="profile__category">
+              <span> Xã hội</span>
+              <button class="profile__category__item">Thời sự</button>
+              <button class="profile__category__item">Giao thông</button>
+              <button class="profile__category__item">
+                Môi trường - Khí hậu
+              </button>
+            </div>
+            <div class="profile__category">
+              <span> Văn hóa</span>
+              <button class="profile__category__item">Nghệ Thuật</button>
+              <button class="profile__category__item">Ẩm thực</button>
+              <button class="profile__category__item">Du lịch</button>
+            </div>
+            <div class="profile__category">
+              <span> Kinh tế</span>
+              <button class="profile__category__item category-active">
+                Lao động - Việc làm
+              </button>
+              <button class="profile__category__item">Tài chính</button>
+              <button class="profile__category__item category-active">
+                Chứng khoán
+              </button>
+              <button class="profile__category__item">Kinh doanh</button>
+            </div>
+            <div class="profile__category">
+              <span> Giáo dục</span>
+              <button class="profile__category__item">Học bổng</button>
+              <button class="profile__category__item">Du học</button>
+            </div>
+          </div>
+          <id id="publisher" class="publisher">
+            <div class="publisher__search">
+              <h1>Publishers</h1>
+              <form class="form-inline">
+                <input
+                  class="form-control publisher__search__input"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button
+                  class="btn my-2 my-sm-0 publisher__search__button"
+                  type="submit"
+                >
+                  <i class="fa fa-search"></i>
+                </button>
+              </form>
+            </div>
+            <div class="publisher__list">
+              <div class="publisher__list__item">
+                <div>
+                  <img src="img/publisher1.png" alt="" />
+                  <div>
+                    <h3>Báo tuổi trẻ</h3>
+                    <p>Uy tín, tiên phong, chất lượng, trách nhiệm</p>
+                  </div>
+                </div>
+                <img src="img/Glasses.png" alt="" />
+              </div>
+              <div class="publisher__list__item">
+                <div>
+                  <img src="img/publisher1.png" alt="" />
+                  <div>
+                    <h3>Báo tuổi trẻ</h3>
+                    <p>Uy tín, tiên phong, chất lượng, trách nhiệm</p>
+                  </div>
+                </div>
+                <img src="img/Glasses.png" alt="" />
+              </div>
+              <div class="publisher__list__item">
+                <div>
+                  <img src="img/publisher1.png" alt="" />
+                  <div>
+                    <h3>Báo tuổi trẻ</h3>
+                    <p>Uy tín, tiên phong, chất lượng, trách nhiệm</p>
+                  </div>
+                </div>
+                <img src="img/Glasses.png" alt="" />
+              </div>
+              <div class="publisher__list__item">
+                <div>
+                  <img src="img/publisher1.png" alt="" />
+                  <div>
+                    <h3>Báo tuổi trẻ</h3>
+                    <p>Uy tín, tiên phong, chất lượng, trách nhiệm</p>
+                  </div>
+                </div>
+                <img src="img/Glasses.png" alt="" />
+              </div>
+            </div>
+          </id>
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <script src="main.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
