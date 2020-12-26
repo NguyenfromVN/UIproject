@@ -3,54 +3,149 @@ import data from './data.js';
 const articleData=(function(){
     const aritcles=data.articles;
 
-    // getAll()
+    function getAll(){
+        return aritcles;
+    }
 
-    // getByCategory(category)
+    function getByCategory(category){
+        let arr=articles.map(article=>{
+            if (article.category==category)
+                return article;
+        })
+        return arr;
+    }
 
-    // search(query)
+    function search(query){
+        let arr=articles.map(article=>{
+            if (article.title.search(query)!=-1)
+                return article;
+        })
+        return arr;
+    }
 
+    function findById(id){
+        let articles;
+        articles.forEach(x=>{
+            if (x.id==id)
+                article=x;
+        })
+        return article;
+    }
+
+    function getAllByCategory(category){
+        return articles.map(article=>{
+            if (article.category==category)
+                return article;
+        })
+    }
+
+    return {
+        getAll,
+        getByCategory,
+        search,
+        findById,
+        getAllByCategory
+    }
 })();
 
 const videoData=(function(){
     const videos=data.videos;
 
-    // getAll()
+    function getAll(){
+        return videos;
+    }
 
-    // search(query)
+    function search(query){
+        return videos.map(video=>{
+            if (video.title.search(query)!=-1)
+                return video;
+        })
+    }
 
+    return {
+        getAll,
+        search
+    }
 })();
 
 const publisherData=(function(){
     const publishers=data.publishers;
 
-    // getAll()
+    function getAll(){
+        return publishers;
+    }
 
-    // search(query)
+    function search(query){
+        return publishers.map(publisher=>{
+            if (publisher.name.search(query)!=-1)
+                return publisher
+        })
+    }
 
+    return {
+        getAll,
+        search
+    }
 })();
 
 const userData=(function(){
     const user=data.user;
 
-    // getProfile()
+    function getProfile(){
+        return user;
+    }
 
-    // subscribePublisher(publisher)
+    function subscribePublisher(publisherName){
+        user.following.push(publisherName);
+    }
 
-    // commentOnNews(title)
+    function commentOnNews(content, articleId){
+        let current=new Date()+'';
+        let time='';
+        for (let i=4; i<24; i++)
+            time+=current[i];
+        const article=articleData.findById(articleId);
+        article.comments.push({
+            author:user.username,
+            content,
+            avatar: user.avatar,
+            time
+        });
+    }
 
-    // addCategory(category)
+    function addCategory(category){
+        user.categories.push(category);
+    }
 
-    // likeNews(title)
+    function likeNews(articleId){
+        const article=articleData.findById(articleId);
+        article.like+=1;
+    }
 
+    return {
+        getProfile,
+        subscribePublisher,
+        commentOnNews,
+        addCategory,
+        likeNews
+    }
 })();
 
 const categoryData=(function(){
     const categories=data.categories;
 
-    // getAll()
+    function getAll(){
+        return categories;
+    }
 
-    // getAllNewsByCategory(category)
+    function getAllNewsByCategory(category){
+        return articleData.getAllByCategory(category);
+    }
 
+    return {
+        getAll,
+        getAllNewsByCategory
+    }
 })();
 
 export {

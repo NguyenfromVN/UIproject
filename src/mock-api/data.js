@@ -1,5 +1,6 @@
 let articles=[
     {
+        id: 0,
         title:'Phó Thủ tướng thăm 3 người tình nguyện tiêm vắc-xin ngừa COVID-19',
         thumbnail: 'https://photo-cms-tpo.zadn.vn/665x449/Uploaded/2020/zwdpvxpd_iwpxwp/2020_12_20/tienphong1_vn_tkut.jpeg',
         category: 'Sức khỏe',
@@ -24,6 +25,7 @@ Trả lời về những nguy cơ sau tiêm vắc-xin, TS Nguyễn Ngô Quang, P
         ]
     },
     {
+        id: 1,
         title:'Giá vàng được dự báo tăng tuần tới',
         thumbnail: 'https://i1-kinhdoanh.vnecdn.net/2020/12/20/gold-1608456501-1138-1608456532.jpg?w=220&h=132&q=100&dpr=1&fit=crop&s=QsCg6Gaz5l54T31X1Lc1UQ',
         category: 'Kinh tế',
@@ -52,6 +54,7 @@ Chốt phiên giao dịch 18/12, mỗi ounce vàng thế giới giao ngay giảm
         ]
     },
     {
+        id: 2,
         title:'Ổ dịch Covid-19 bùng phát trong nhà tù Hàn Quốc',
         thumbnail: 'https://i1-vnexpress.vnecdn.net/2020/12/20/s1-3574-1608462137.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=fEik4W5qqyTJCx7GSSWtww',
         category: 'Sức khỏe',
@@ -80,6 +83,7 @@ Cơ quan giám sát thuốc Hàn Quốc có khả năng sẽ phê duyệt sử d
         ]
     },
     {
+        id: 3,
         title:'Hoàng Thùy Linh, Binz hát trực tuyến đón năm mới',
         thumbnail: 'https://i1-giaitri.vnecdn.net/2020/12/20/hoang-thuy-linh3-xwly-6235-1608459306.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=qculzyMblSE2ZLaOrWkJAg',
         category: 'Giải trí',
@@ -102,6 +106,7 @@ Năm qua, làng nhạc Việt hưởng ứng hình thức "liveshow trực tuy�
         ]
     },
     {
+        id: 4,
         title:'Ronaldo vượt kỷ lục của Pele',
         thumbnail: 'https://i1-thethao.vnecdn.net/2020/12/20/222549410-3315eb88-faa1-426a-9-8736-3847-1608459349.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=3RfRqmrMp_Io_fdmNrsk6w',
         category: 'Thể thao',
@@ -133,31 +138,36 @@ let videos=[
         thumbnail:'https://photo-baomoi.zadn.vn/w600_r3x2/2020_12_20_83_37398024/4c1e21acf9ef10b149fe.jpg',
         title:'Miếng thịt lợn tươi sống co giật khiến người xem nổi da gà',
         time:'20/12/2020 20:05',
-        author:'VTCNews'
+        author:'VTCNews',
+        url:'https://video.nghenhinvietnam.vn/460af6f7b90f457da6e400490b5dadf9/5fe83f00/2020_12_26/25/video_xiaomi_mi_11_1.mp4',
     },
     {
         thumbnail:'https://photo-baomoi.zadn.vn/w300_r3x2/2020_12_20_541_37397963/beb690074844a11af855.jpg',
         title:'Camera giao thông: Xe máy trượt bánh, tài xế bị cuốn luôn vào gầm ô tô nhưng chỉ bị thương nhẹ',
         time:'20/12/2020 20:05',
-        author:'VTV24'
+        author:'VTV24',
+        url:'http://vnews.mediacdn.vn/197609248923488256/2020/12/26/13h-16089667786951753523953.mp4',
     },
     {
         thumbnail:'https://photo-baomoi.zadn.vn/w300_r3x2/2020_12_20_119_37397938/9c310181d9c2309c69d3.jpg',
         title:'7 vụ chuyển nhượng có thể được hoàn tất đầu năm 2021',
         time:'20/12/2020 20:05',
-        author:'Zing'
+        author:'Zing',
+        url:'http://nguoiduatin.mediacdn.vn/208160615529951232/2020/12/26/ky-da-dau-mma-ngay-trong-vuon-n-16089655765052124586117.mp4',
     },
     {
         thumbnail:'https://photo-baomoi.zadn.vn/w300_r3x2/2020_12_20_541_37397905/e646f8f620b5c9eb90a4.jpg',
         title:'Cận cảnh màn nạp tên lửa Avangard vào hầm phóng của Nga',
         time:'20/12/2020 20:05',
-        author:'THỜI ĐẠI'
+        author:'THỜI ĐẠI',
+        url:'http://nguoiduatin.mediacdn.vn/208160615529951232/2020/12/26/ly-quy-giet-ho-luc-cong-me-len-luong-son-bac-ho-tu-anh-hung--16089586941971274974691.mp4',
     },
     {
         thumbnail:'https://photo-baomoi.zadn.vn/w300_r3x2/2020_12_20_180_37397991/3eb9f008284bc115985a.jpg',
         title:'Ngắm Lamborghini Gallardo Spyder Performante độc nhất Việt Nam',
         time:'20/12/2020 20:05',
-        author:'KIẾN THỨC'
+        author:'KIẾN THỨC',
+        url:'https://v-cdn.vietnamnetjsc.vn/media/ts/2020/12/24/11/24/02a2a2a2-1fe1-431b-8954-d80bf61c2cfd.mp4',
     },
 ];
 
@@ -165,32 +175,77 @@ let publishers=[
     {
         name:'BÁO MỚI',
         frequency:'20',
-        avatar:'https://lh3.googleusercontent.com/proxy/yVaYpbD-aFig4FB8FyNjwjvcp4iT7TvAzH-V6U2cjddUght5t9Nw7qPrtlzBUrjt3vNtFYlQjA3dhiBJ4AJ1Sy6mIA8ECNsEjLQ',
+        cover:'https://sallybeautycenter.com/wp-content/uploads/2018/02/baomoi-logo.jpg',
+        avatar:'https://anhduongtruyenthong.com.vn/wp-content/uploads/2017/11/qc-bao-moi-500x407.jpg',
         slogan:'Báo mới nhất, tin cậy nhất, uy tín hàng đầu',
+        followers:'32k',
+        address:'Tầng 5, Tòa nhà Báo Sinh Viên VN, D29 Phạm Văn Bạch, Yên Hòa, Cầu Giấy, Hà Nội',
+        categories:[
+            "Chính trị",
+            "Giải trí",
+            "Du lịch",
+        ],
+        latest: [0,1,2,3,4],
     },
     {
         name:'VN Express',
         frequency:'40',
-        avatar:'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/VnExpress_logo.png/1200px-VnExpress_logo.png',
+        cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/VnExpress_logo.png/1200px-VnExpress_logo.png',
+        avatar:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgtuWdRHbB2ZX1PPN40hhoqwKoTzpqLcvvqw&usqp=CAU',
         slogan:'Báo tiếng việt với lượng truy cập đông nhất',
+        followers:'93k',
+        address:'Tầng 5, Tòa nhà FPT Cầu Giấy, phố Duy Tân, Phường Dịch Vọng Hậu, Quận Cầu Giấy, Hà Nội',
+        categories:[
+            "Khoa học",
+            "Giải trí",
+            "Thời sự",
+        ],
+        latest: [0,1,2,3,4],
     },
     {
         name:'Kênh 14',
         frequency:'30',
+        cover:'https://marketingai.admicro.vn/wp-content/uploads/2018/10/kenh14.jpg',
         avatar:'https://kenh14cdn.com/web_images/k14_logo_new.png',
         slogan:'Kênh tin tức, giải trí, truyền thông lớn nhất',
+        followers:'105k',
+        address:'Tầng 17, 19, 20, 21 Tòa nhà Center Building - Hapulico Complex, Số 1 Nguyễn Huy Tưởng, Thanh Xuân, Hà Nội',
+        categories:[
+            "Sức khỏe",
+            "Giải trí",
+            "Thể thao",
+        ],
+        latest: [0,1,2,3,4],
     },
     {
         name:'24h.com',
         frequency:'15',
-        avatar:'https://upload.wikimedia.org/wikipedia/commons/1/1c/Bao-24h.png',
+        cover:'https://upload.wikimedia.org/wikipedia/commons/1/1c/Bao-24h.png',
+        avatar:'https://images1.cafef.vn/Images/Uploaded/DuLieuDownload/LogoCorpLarge/24h.jpg',
         slogan:'Cập nhật liên tục 24 giờ',
+        followers:'12k',
+        address:'Tầng 12 – Tòa nhà Geleximco – 36 Hoàng Cầu, P. Ô Chợ Dừa, Q. Đống Đa, TP. Hà Nội',
+        categories:[
+            "Kinh tế",
+            "Giải trí",
+            "Du lịch",
+        ],
+        latest: [0,1,2,3,4],
     },
     {
         name:'Tiền Phong',
         frequency:'25',
-        avatar:'https://images.tienphong.vn/web/App_Themes/img/logo-web.png',
+        cover:'https://images.tienphong.vn/web/App_Themes/img/logo-web.png',
+        avatar:'https://anhaudan.com/wp-content/uploads/2018/09/logo-b%C3%A1o-ti%E1%BB%81n-phong.png',
         slogan:'Báo uy tín, lâu đời nhất',
+        followers:'89k',
+        address:'15 Hồ Xuân Hương, Hà Nội',
+        categories:[
+            "Chính trị",
+            "Giải trí",
+            "Thời sự",
+        ],
+        latest: [0,1,2,3,4],
     },
 ];
 
@@ -219,7 +274,9 @@ let categories={
         "Ẩm thực",
         "Du lịch",
         "Giải trí",
-        "Thể thao"
+        "Thể thao",
+        "Chính trị",
+        "Khoa học"
     ]    
 }
 
