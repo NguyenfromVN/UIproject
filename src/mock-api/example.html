@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div id="result"></div>
+        </div>
+        <script type="module">
+            import * as api from './mockAPI.js';
+
+            const resultDiv = document.getElementById('result');
+            let str='';
+            let res=[];
+
+            // calling mock api and get results
+
+            res.push(JSON.stringify(api.articleData.getAll()));
+            res.push(JSON.stringify(api.articleData.getByCategory('Sức khỏe')));
+            res.push(JSON.stringify(api.articleData.search('Ronaldo')));
+            res.push(JSON.stringify(api.articleData.findById(0)));
+            res.push(JSON.stringify(api.articleData.getAllByCategory('Sức khỏe')));
+
+            res.push(JSON.stringify(api.videoData.getAll()));
+            res.push(JSON.stringify(api.videoData.search('giao thông')));
+
+            res.push(JSON.stringify(api.publisherData.getAll()));
+            res.push(JSON.stringify(api.publisherData.search('BÁO MỚI')));
+
+            res.push(JSON.stringify(api.userData.getProfile()));
+            res.push(JSON.stringify(api.userData.subscribePublisher('BÁO MỚI')));
+            res.push(JSON.stringify(api.userData.commentOnNews('ĐMM',0)));
+            res.push(JSON.stringify(api.userData.addCategory('Giao thông')));
+            res.push(JSON.stringify(api.userData.likeNews(0)));
+
+            res.push(JSON.stringify(api.categoryData.getAll()));
+            res.push(JSON.stringify(api.categoryData.getAllNewsByCategory('Sức khỏe')));
+
+            // update html
+
+            res.forEach(result=>{
+                str+=`\n\n\n\n${result}`;
+            });
+            resultDiv.innerText=str;
+        </script>
+    </body>
+</html>

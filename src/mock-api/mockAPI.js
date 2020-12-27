@@ -1,10 +1,10 @@
 import data from './data.js';
 
 const articleData=(function(){
-    const aritcles=data.articles;
+    const articles=data.articles;
 
     function getAll(){
-        return aritcles;
+        return articles;
     }
 
     function getByCategory(category){
@@ -24,7 +24,7 @@ const articleData=(function(){
     }
 
     function findById(id){
-        let articles;
+        let article;
         articles.forEach(x=>{
             if (x.id==id)
                 article=x;
