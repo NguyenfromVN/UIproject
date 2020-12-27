@@ -34,8 +34,8 @@
   <body class="container">
     <header class="header">
       <div class="header__top">
-        <a href="/home/index.html" class="header__left">
-          <img src="../img/Logo.png" alt="" />
+        <a href="/front-end/index.html" class="header__left">
+          <img src="./img/Logo.png" alt="" />
           <p>BAO BAO</p>
         </a>
         <div class="header__right">
@@ -88,7 +88,7 @@
         </div>
       </div>
 
-      
+
 
       <div class="header__popup" id="burger">
         <div class="header__tag">
@@ -182,18 +182,15 @@
                     <i class="fab fa-youtube fa-2x"></i>
                 </a>
             </div>
-            <div class="content col-8">
+            <div class="content_page col-8">
                 <h3>
-                    <b>
-                        Joe Biden và Kamala Harris là nhân vật của năm 2020 do Time bình chọn
+                    <b id = "title">
                     </b>
                 </h3>
                 <div class = "info-publisher">
-                    <span>
-                        Tuổi trẻ
+                    <span id = "author">
                     </span>
-                    <span>
-                        4 giờ
+                    <span id = "time">
                     </span>
                     <span>
                         3 liên quan
@@ -205,9 +202,9 @@
                     type="button"
                     >
                     <i class="fas fa-thumbs-up"></i>
-                    <span>like 36</span>
+                    <span id = "like"></span>
                     </button>
-                    
+
                     <button
                     class="btn btn-primary"
                     type="button"
@@ -216,38 +213,25 @@
                     </button>
                 </div>
                 <hr/>
-                <div>
-                  <p class="content-header para">
-                    (BAOBAO News) - Tổng thống đắc cử Joe Biden và Phó tổng thống đắc cử Kamala Harris được Tạp chí TIME bình chọn là Nhân vật của năm cho năm 2020.
-                  </p>
+                <div id = "content">
+<!--                  <p class="content-header para">-->
+<!--                    (BAOBAO News) - Tổng thống đắc cử Joe Biden và Phó tổng thống đắc cử Kamala Harris được Tạp chí TIME bình chọn là Nhân vật của năm cho năm 2020.-->
+<!--                  </p>-->
 
-                  <p class="content-body para">
-                    Ông Biden được ca ngợi với sự nghiêm túc cho việc ứng phó với đại dịch COVID-19. Bên cạnh đó, "đối với ông, đó không phải là chiến đấu với Trump để trả thù, hay vì bất kỳ mục tiêu sâu xa nào để đưa mình đi lên. Biden tin rằng hầu hết các cử tri chỉ đơn giản muốn hòa giải sau 4 năm chiến đấu, rằng họ khao khát sự đàng hoàng, phẩm giá, kinh nghiệm và năng lực".
-                  </p>
-
-                  <p class="content-body para">
-                    Về Kamala Harris, TIME viết: "Biden có tầm nhìn, cảm hứng và đứng đầu phiếu bầu. Nhưng ông cũng nhận ra những gì ông không thể tự mình tạo ra: sự thay đổi thế hệ, một quan điểm mới mẻ và hiện thân cho sự đa dạng của nước Mỹ. Để làm được điều đó, ông cần Kamala Harris: Thượng nghị sĩ California, cựu luật sư và lãnh đạo tư pháp tiểu bang, một người con lai của những người nhập cư có sức thu hút và chất vấn cứng rắn đối với các quan chức Chính quyền Trump đã khiến hàng triệu đảng viên Dân chủ cảm động. Phó Tổng thống trước đây chưa bao giờ là một phụ nữ, hoặc người da đen, hoặc người Mỹ gốc Á".
-                  </p>
-                  
-                  <p class="content-body para">
-                    TIME cũng đề cử Tổng thống Donald Trump, Tiến sĩ Anthony Fauci và các nhân viên y tế tuyến đầu Mỹ cho vị trí danh dự. Ấn phẩm được công bố vào tối thứ Năm (10/12).
-                  </p>
-
-                  <p class="content-body para">
-                    Bên cạnh Nhân vật của năm, ông Fauci, những người làm việc tuyến đầu trong đại dịch COVID-19 được vinh danh là Người bảo vệ của năm, cùng với Porche Bennett-Bey, Assa Traoré và các nhà tổ chức công bằng chủng tộc khác.
-                  </p>
-
-                  <img src="https://image.vtc.vn/upload/2020/12/11/biden-harris-696x465-11121366.jpg">
-
-                  <p class="content-body para">
-                    Người sáng lập kiêm Giám đốc điều hành của Zoom, Eric Yuan được vinh danh là Doanh nhân của năm, trong khi TIME vinh danh ngôi sao của Los Angeles Lakers, LeBron James là Vận động viên của năm, ca ngợi vai trò của anh trong việc lãnh đạo công bằng xã hội. Nhóm nhạc K-pop BTS được vinh danh là Người giải trí của năm.
-                  </p>
-
-                  <p class="content-body para">
-                    Gitanjali Rao, 15 tuổi, một học sinh Colorado, người đã tạo ra giải pháp trí tuệ nhân tạo và ứng dụng để chống lại các vấn đề xã hội, trước đó đã được vinh danh là Trẻ em của năm.
-                  </p>
+                  <img id = 'image'>
 
                   <hr/>
+                </div>
+                <hr/>
+                <div class = "comment">
+                    <div class = "comment-section row">
+                        <div class = "col-sm-1">
+                            <img src="img/Avatar.png" alt="" class="header__right__avatar" />
+                        </div>
+                        <div class = "col-sm-11">
+                            <textarea class="form-control comment-area" placeholder="Comment..."></textarea>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class = "ads col 3">
@@ -258,7 +242,87 @@
                     Gợi ý về việc nên chọn Corpo hay Street Kid trong Cyberpunk 2077
                   </b>
                 </p>
-                
+
+                <div class = "info-publisher">
+                    <span>
+                        Tuổi trẻ
+                    </span>
+                    <span>
+                        4 giờ
+                    </span>
+                    <span>
+                        3 liên quan
+                    </span>
+                </div>
+              </div>
+              <div class = "ads-exampl">
+                <img src="https://www.playstationlifestyle.net/assets/uploads/2020/12/Cyberpunk-2077-refunds-sony-ps4-microsoft-CD-Projekt-RED-CDPR.jpg">
+                <p>
+                  <b>
+                    Gợi ý về việc nên chọn Corpo hay Street Kid trong Cyberpunk 2077
+                  </b>
+                </p>
+
+                <div class = "info-publisher">
+                    <span>
+                        Tuổi trẻ
+                    </span>
+                    <span>
+                        4 giờ
+                    </span>
+                    <span>
+                        3 liên quan
+                    </span>
+                </div>
+              </div>
+              <div class = "ads-exampl">
+                <img src="https://www.playstationlifestyle.net/assets/uploads/2020/12/Cyberpunk-2077-refunds-sony-ps4-microsoft-CD-Projekt-RED-CDPR.jpg">
+                <p>
+                  <b>
+                    Gợi ý về việc nên chọn Corpo hay Street Kid trong Cyberpunk 2077
+                  </b>
+                </p>
+
+                <div class = "info-publisher">
+                    <span>
+                        Tuổi trẻ
+                    </span>
+                    <span>
+                        4 giờ
+                    </span>
+                    <span>
+                        3 liên quan
+                    </span>
+                </div>
+              </div>
+              <div class = "ads-exampl">
+                <img src="https://www.playstationlifestyle.net/assets/uploads/2020/12/Cyberpunk-2077-refunds-sony-ps4-microsoft-CD-Projekt-RED-CDPR.jpg">
+                <p>
+                  <b>
+                    Gợi ý về việc nên chọn Corpo hay Street Kid trong Cyberpunk 2077
+                  </b>
+                </p>
+
+                <div class = "info-publisher">
+                    <span>
+                        Tuổi trẻ
+                    </span>
+                    <span>
+                        4 giờ
+                    </span>
+                    <span>
+                        3 liên quan
+                    </span>
+                </div>
+              </div>
+              <div class = "ads-exampl">
+                <img src="https://www.playstationlifestyle.net/assets/uploads/2020/12/Cyberpunk-2077-refunds-sony-ps4-microsoft-CD-Projekt-RED-CDPR.jpg">
+                <p>
+                  <b>
+                    Gợi ý về việc nên chọn Corpo hay Street Kid trong Cyberpunk 2077
+                  </b>
+                </p>
+
                 <div class = "info-publisher">
                     <span>
                         Tuổi trẻ
@@ -274,10 +338,8 @@
             </div>
         </div>
     </section>
-     
 
-    <!-- Optional JavaScript -->
-    <script src="main.js"></script>
+
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -295,5 +357,9 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Optional JavaScript -->
+    <script type="module" src="newsPage.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

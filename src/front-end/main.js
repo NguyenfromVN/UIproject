@@ -37,5 +37,3 @@ selectBurger = () => {
     burger.style.display = "none";
   }
 };
-
-select
