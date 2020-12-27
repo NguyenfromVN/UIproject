@@ -8,18 +8,12 @@ const articleData=(function(){
     }
 
     function getByCategory(category){
-        let arr=articles.map(article=>{
-            if (article.category==category)
-                return article;
-        })
+        let arr=articles.filter(article=>(article.category==category));
         return arr;
     }
 
     function search(query){
-        let arr=articles.map(article=>{
-            if (article.title.search(query)!=-1)
-                return article;
-        })
+        let arr=articles.filter(article=>(article.title.search(query)!=-1));
         return arr;
     }
 
@@ -33,10 +27,7 @@ const articleData=(function(){
     }
 
     function getAllByCategory(category){
-        return articles.map(article=>{
-            if (article.category==category)
-                return article;
-        })
+        return articles.filter(article=>(article.category==category));
     }
 
     return {
@@ -56,10 +47,7 @@ const videoData=(function(){
     }
 
     function search(query){
-        return videos.map(video=>{
-            if (video.title.search(query)!=-1)
-                return video;
-        })
+        return videos.filter(video=>(video.title.search(query)!=-1));
     }
 
     return {
@@ -76,10 +64,7 @@ const publisherData=(function(){
     }
 
     function search(query){
-        return publishers.map(publisher=>{
-            if (publisher.name.search(query)!=-1)
-                return publisher
-        })
+        return publishers.filter(publisher=>(publisher.name.search(query)!=-1));
     }
 
     return {
