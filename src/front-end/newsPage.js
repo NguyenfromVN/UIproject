@@ -3,7 +3,13 @@ import * as API from "../mock-api/mockAPI.js"
 let data = null;
 
 const getData = () => {
-    data = API.articleData.findById(getQueryParams('id', location.href));
+    if (getQueryParams('v', location.href) === 't')
+    {
+        data = API.videoData.findById(getQueryParams('id', location.href));
+        console.log(data)
+    } else {
+        data = API.articleData.findById(getQueryParams('id', location.href));
+    }
     console.log(data)
     console.log(location.href)
 }
@@ -30,7 +36,14 @@ const fillData = () => {
         $("#content").append(`<p class='content-body para'> ${c} </p>`)
     })
 
-    $("#image").attr("src", data.thumbnail)
+    
+    if (getQueryParams('v', location.href) === 'f'){
+        $("#image").attr("src", data.thumbnail)
+        $("#image").css("display", "block");
+    } else {
+        $("#video").attr("src", data.url)
+        $("#video").css("display", "block");
+    }
 
     data.comments.forEach(com => {
         $(".comment").append(`

@@ -50,9 +50,12 @@ const new_home = document.querySelector("#news-content")
 const all_time_home = document.querySelector("#all-time-home");
 
 
-const testClick = (id) =>{
+const testClick = (id, type) =>{
     console.log(id);
-    location.href = `./newsPage.html?id=${id}`;
+    if (!type) 
+        location.href = `./newsPage.html?id=${id}&v=f`;
+    else 
+        location.href = `./newsPage.html?id=${id}&v=t`;
 }
 
 
@@ -236,7 +239,7 @@ const fil_all_video = ()=>{
         const item = document.createElement('div');
             item.classList.add("video__item");
             item.onclick = function(){
-                testClick(element.id);
+                testClick(element.id, "v");
             }
             item.innerHTML = `<img src="${element.thumbnail}" alt="" class="video__item__img">
             <div class="video__item__title">

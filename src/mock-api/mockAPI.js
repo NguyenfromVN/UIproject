@@ -45,6 +45,15 @@ const videoData=(function(){
     function getAll(){
         return videos;
     }
+    
+    function findById(id){
+        let video;
+        videos.forEach(x=>{
+            if (x.id==id)
+            video=x;
+        })
+        return video;
+    }
 
     function search(query){
         return videos.filter(video=>(video.title.search(query)!=-1));
@@ -52,7 +61,8 @@ const videoData=(function(){
 
     return {
         getAll,
-        search
+        search,
+        findById
     }
 })();
 

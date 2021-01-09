@@ -236,15 +236,17 @@ Trao đổi trên báo chí, PGS.TS Nguyễn Thiện Tống, nguyên Chủ nhi�
 let videos=[
     {
         id:0,
+        like:47,
         thumbnail:'https://photo-baomoi.zadn.vn/w600_r3x2/2020_12_20_83_37398024/4c1e21acf9ef10b149fe.jpg',
         title:'Miếng thịt lợn tươi sống co giật khiến người xem nổi da gà',
         content:'Một hiện tượng lạ khiến cộng đồng mạng xôn xao và truyền tay nhau về 1 đoạn video ngắn cho thấy 1 miếng thịt lợn tươi có những hiện tượng kỳ lạ xảy ra.',
         time:'20/12/2020 20:05',
         author:'VTCNews',
-        url:'https://video.nghenhinvietnam.vn/460af6f7b90f457da6e400490b5dadf9/5fe83f00/2020_12_26/25/video_xiaomi_mi_11_1.mp4',
+        url:'http://vnews.mediacdn.vn/197609248923488256/2020/12/26/13h-16089667786951753523953.mp4',
     },
     {
         id:1,
+        like:32,
         thumbnail:'https://photo-baomoi.zadn.vn/w300_r3x2/2020_12_20_541_37397963/beb690074844a11af855.jpg',
         title:'Camera giao thông: Xe máy trượt bánh, tài xế bị cuốn luôn vào gầm ô tô nhưng chỉ bị thương nhẹ',
         content:`Vào hôm nay, 1 đoạn video ngắn cho thấy cảnh tượng khiến ai cũng phải giật mình, về 1 vụ va chạm trên đường giao thông, nhưng may mắn thay là người lái xe máy chỉ bị xay xát nhẹ.`,
@@ -254,6 +256,7 @@ let videos=[
     },
     {
         id:2,
+        like:421,
         thumbnail:'https://photo-baomoi.zadn.vn/w300_r3x2/2020_12_20_119_37397938/9c310181d9c2309c69d3.jpg',
         title:'7 vụ chuyển nhượng có thể được hoàn tất đầu năm 2021',
         content:'Năm 2020 là năm khó khăn đối với tất cả các ngành nghề, và bóng đá cũng không lệ. Tuy nhiên, điều đó vẫn không ngăn được dòng lưu thông các cầu thử hàng đầu thế giới, các cuộc chuyển nhượng lớn dự kiến sẽ diễn ra vào năm 2021.',
@@ -263,6 +266,7 @@ let videos=[
     },
     {
         id:3,
+        like:44,
         thumbnail:'https://photo-baomoi.zadn.vn/w300_r3x2/2020_12_20_541_37397905/e646f8f620b5c9eb90a4.jpg',
         title:'Cận cảnh màn nạp tên lửa Avangard vào hầm phóng của Nga',
         content:'Siêu vũ khí siêu thanh của Nga thể hiện sức mạnh trong 1 video ngắn do hãng thông tấn RT phát ra hôm qua.',
@@ -272,6 +276,7 @@ let videos=[
     },
     {
         id:4,
+        like:76,
         thumbnail:'https://photo-baomoi.zadn.vn/w300_r3x2/2020_12_20_180_37397991/3eb9f008284bc115985a.jpg',
         title:'Ngắm Lamborghini Gallardo Spyder Performante độc nhất Việt Nam',
         content:'Chiếc siêu bò tuyệt đẹp, phiên bản độ giới hạn lấy cảm hứng từ đàn em dũng mãnh Huracan Performante.',
@@ -281,6 +286,7 @@ let videos=[
     },
     {
         id:5,
+        like:700,
         thumbnail:'https://media1.nguoiduatin.vn/thumb_x992x558/media/ngac-kim-giang/2021/01/03/co-dau-huy-hon-vi-chu-re-mua-nham-size-noi-y1.jpg',
         title:'Nhà gái hủy hôn vì chú rể mua nhầm size nội y của cô dâu',
         content:'Khi quan khách đã có mặt đông đủ chỉ chờ cô dâu chú rể xuất hiện thì lại xảy ra sự cố bất ngờ.',
@@ -290,6 +296,7 @@ let videos=[
     },
     {
         id:6,
+        like:123,
         thumbnail:'https://photo-baomoi.zadn.vn/w300_r3x2/2021_01_03_20_37535526/a77d443092737b2d2262.jpg',
         title:'Xe bán tải tạt đầu container trong đêm',
         content:'Vụ việc xảy ra vào ngày 29/12 vừa qua, một chiếc xe container đang đi đường trong trời tối bất ngờ bị xe bán tải từ bên phải tạt đầu, rất may không có va chạm nào xảy ra nhưng điều này cũng khiến tài xế container phải giật mình.',
@@ -299,6 +306,7 @@ let videos=[
     },
     {
         id:7,
+        like:4333,
         thumbnail:'https://photo-baomoi.zadn.vn/w300_r3x2/2021_01_03_345_37535270/586d471f915c7802214d.jpg',
         title:'Bắt giữ lô hàng gần 2.000 khẩu súng đồ chơi không rõ nguồn gốc',
         content:'Ngày 3/1, Phòng cảnh sát kinh tế, Công an tỉnh Lào Cai phối hợp cùng lực lượng quản lý thị trường tỉnh Lào Cai đã bắt giữ lô hàng gần 2.000 khẩu súng đồ chơi không rõ nguồn gốc xuất xứ.',
@@ -308,6 +316,7 @@ let videos=[
     },
     {
         id:8,
+        like:54,
         thumbnail:'https://images.giaoducthoidai.vn/public/cuonglv/2021-01-03/olympiakios.jpg',
         title:'Nam sinh TPHCM giành giải nhất cuộc thi tuần đầu tiên Olympia 2021',
         content:'GD&TĐ - Nguyễn Tấn Khải - học sinh Trường THPT Quốc tế (TPHCM) đã xuất sắc giành vòng nguyệt quế Đường lên đỉnh Olympia đầu tiên trong năm 2021.',
@@ -317,6 +326,7 @@ let videos=[
     },
     {
         id:9,
+        like:4,
         thumbnail:'https://znews-photo.zadn.vn/w860/Uploaded/mdf_drokxr/2020_09_12/1_man_utd.JPG',
         title:`Solskjaer luôn biết cách để giữ ghế ở Man Utd'`,
         content:'Cựu danh thủ Danny Murphy cho rằng tương lai của Ole Gunnar Solskjaer ở Old Trafford từng nhiều lần bị đặt dấu hỏi, nhưng chiến lược gia này luôn tìm được cách giải quyết.',
