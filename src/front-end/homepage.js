@@ -55,6 +55,46 @@ const testClick = (id) =>{
     location.href = `./newsPage.html?id=${id}`;
 }
 
+
+
+const getQueryParams = (params, url) => {
+    let href = url;
+    //this expression is to get the query strings
+    let reg = new RegExp('[?&]' + params + '=([^&#]*)', 'i');
+    let queryString = reg.exec(href);
+    return queryString ? queryString[1] : null;
+};
+
+const search_content = document.querySelector("#body-search")
+const fill_search = ()=>{
+    API.articleData.search(getQueryParams('q', location.href)).forEach(element=>{
+        const item = document.createElement('div');
+        item.classList.add("video__item");
+        item.onclick = function(){
+            testClick(element.id);
+        }
+        item.innerHTML = `<img src="${element.thumbnail}" alt="" class="video__item__img">
+        <div class="video__item__title">
+            ${element.title}
+        </div>
+        <div class="video__item__meta">
+            <span class="detail">
+                ${element.author}
+            </span>
+            <span class="detail-middle">
+                ${element.time}
+            </span>
+            <span class="detail">
+                3 liên quan
+            </span>
+        </div>`
+        search_content.appendChild(item);
+    })
+}
+
+fill_search()
+
+
 const fill_hot = () =>{
     API.articleData.getAll().forEach(element => {
     const item = document.createElement('div');
@@ -196,7 +236,7 @@ const fil_all_video = ()=>{
         const item = document.createElement('div');
             item.classList.add("video__item");
             item.onclick = function(){
-                testClick(element.title);
+                testClick(element.id);
             }
             item.innerHTML = `<img src="${element.thumbnail}" alt="" class="video__item__img">
             <div class="video__item__title">
@@ -217,7 +257,70 @@ const fil_all_video = ()=>{
         });
 }
 
+const cate_content = document.querySelector("#cate-container");
+const fill_cate = ()=>{
+    const cate_data  = ["Thời sự",
+    "Giao thông",
+    "Sức khỏe",
+    "Kinh tế", "Nghệ thuật",
+    "Ẩm thực",
+    "Du lịch",
+    "Giải trí",
+    "Thể thao",
+    "Chính trị",
+    "Khoa học"]
+    cate_data.forEach(element => {
+        const item = document.createElement('div');
+            item.classList.add("container-cate__content");
+            item.innerHTML = `<div class="title">
+            <img src="./img/Logo.png" class="title__logo">
+            <span class="title__text">${element}</span>
+            <img src="./img/Star.png" class="title__logo">
+        </div>`
+        API.categoryData.getAllNewsByCategory(element).forEach(element=>{
+            const item1 = document.createElement('div');
+            item1.classList.add("cate__item");
+            item1.innerHTML = `<img src="${element.thumbnail}" alt="" class="cate__item__img">
+            <div class="cate__item____content">
+                <div class="cate__item__title">
+                ${element.title}
+                </div>
+                <div class="cate__item__meta">
+                    <span class="detail">
+                        ${element.author}
+                    </span>
+                    <span class="detail-middle">
+                        ${element.time}
+                    </span>
+                    <span class="detail">
+                        3 liên quan
+                    </span>
+                </div>
+            </div>`
+            item.onclick = function(){
+                testClick(element.id);
+            }
+        item.appendChild(item1);
+        })
+        if(API.categoryData.getAllNewsByCategory(element).length===0){
+            item.style.display = "none"
+        }
 
+        cate_content.appendChild(item)
+        });
+     
+}
+
+const search_form = document.querySelector("#search-form")
+search_form.addEventListener('submit', e=>{
+    const body = document.querySelector("#body")
+    content_news.style.display = "none";
+    content_video.style.display = "none";
+    content_cate.style.display = "none";
+    content_hot.style.display = "none";
+})
+
+fill_cate();
 fill_hot();
 fill_new();
 fil_all_time();

@@ -83,29 +83,6 @@ Cơ quan giám sát thuốc Hàn Quốc có khả năng sẽ phê duyệt sử d
         ]
     },
     {
-        id: 3,
-        title:'Hoàng Thùy Linh, Binz hát trực tuyến đón năm mới',
-        thumbnail: 'https://i1-giaitri.vnecdn.net/2020/12/20/hoang-thuy-linh3-xwly-6235-1608459306.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=qculzyMblSE2ZLaOrWkJAg',
-        category: 'Giải trí',
-        author:'Tam Kỳ',
-        time:'20/12/2020, 17:41',
-        content:
-`Ca sĩ Hoàng Thùy Linh, rapper Binz biểu diễn với công nghệ thực tế ảo tại liveshow trực tuyến đón 2021.
-Nữ ca sĩ sẽ thể hiện hai bài hit Để Mị nói cho mà nghe và Kẻ cắp gặp bà già - nằm trong album Hoàng (2019), do Thịnh Kainz, Kata Trần sáng tác. Binz trình bày hai bản rap Bigcityboi và Gene. Họ là hai giọng ca chính trong đêm nhạc đón giao thừa 2021 - Lễ hội ánh sáng (Countdown Lights), diễn ra hôm 31/12. Do dịch, chương trình năm nay chuyển sang hình thức trực tuyến. Các nghệ sĩ trình diễn với công nghệ thực tế ảo mở rộng XR (Extended Reality) tại trường quay, dàn dựng nhiều hiệu ứng 3D.
-Chương trình còn có sự tham gia của nhiều nghệ sĩ, hát các thể loại như pop, rock, dân gian đương đại. Ca sĩ Min và vũ công Quang Đăng biểu diễn Ghen Cô Vy (Khắc Hưng) - ca khúc tuyên truyền chống Covid-19 từng gây sốt với điệu nhảy rửa tay. Ban nhạc Chillies hát hai ca khúc Vùng ký ức, Cứ chill thôi. Giọng ca chuyển giới Lynk Lee trình bày bản ballad Buồn thì cứ khóc đi. Thụy Bình thể hiện nhạc phẩm Còn thương rau đắng mọc sau hè (Bắc Sơn). Thanh Bùi hát We are one - ca khúc về tình đoàn kết.
-Chương trình được chia làm ba phần. Chương một mang tên Music goes on - nói về sức mạnh của âm nhạc trong thời dịch. Chương hai - Love goes on - mang thông điệp về tình yêu, tình cảm gia đình. Chương ba - Life goes on - là lời kết của đêm nhạc, kể về tương lai với trạng thái bình thường mới.
-Năm qua, làng nhạc Việt hưởng ứng hình thức "liveshow trực tuyến", nhất là trong thời gian giãn cách xã hội vì Covid-19. Hồi tháng ba, Mỹ Linh tham gia Music Home - series âm nhạc trực tuyến do nhạc sĩ Anh Quân, Huy Tuấn chỉ đạo nghệ thuật. Tuấn Hưng và Khắc Việt tổ chức show Live in Sweet Home - diễn ra vào tối thứ bảy hàng tuần. Đình Bảo làm series The Story với nhiều tiết mục quay tại Đà Lạt, đăng định kỳ lên kênh Youtube của anh. Đức Tuấn làm minishow diễn ra vào tối thứ 4 và thứ 7 hàng tuần theo các chủ đề. Nhạc sĩ Tuấn Thăng cùng các đồng nghiệp làm loạt liveshow Những câu chuyện kể - phát trực tuyến theo chủ đề.`        ,
-        like:300,
-        comments: [
-            {
-                author:'Thành',
-                content:'Thích lắm luôn, hihi',
-                avatar: 'https://a.vnecdn.net/avatar/c60x60/2016/06/18/2626885755_1466265329.jpg',
-                time: '20/12/2020 19:00'
-            }
-        ]
-    },
-    {
         id: 4,
         title:'Ronaldo vượt kỷ lục của Pele',
         thumbnail: 'https://i1-thethao.vnecdn.net/2020/12/20/222549410-3315eb88-faa1-426a-9-8736-3847-1608459349.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=3RfRqmrMp_Io_fdmNrsk6w',
