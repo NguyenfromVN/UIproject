@@ -27,7 +27,7 @@ Trả lời về những nguy cơ sau tiêm vắc-xin, TS Nguyễn Ngô Quang, P
     {
         id: 1,
         title:'Giá vàng được dự báo tăng tuần tới',
-        thumbnail: 'https://i1-kinhdoanh.vnecdn.net/2020/12/20/gold-1608456501-1138-1608456532.jpg?w=220&h=132&q=100&dpr=1&fit=crop&s=QsCg6Gaz5l54T31X1Lc1UQ',
+        thumbnail: 'https://anhduongtruyenthong.com.vn/wp-content/uploads/2017/11/qc-bao-moi-500x407.jpg',
         category: 'Kinh tế',
         author:'Tú Anh',
         time:'20/12/2020, 17:39',
@@ -56,7 +56,7 @@ Chốt phiên giao dịch 18/12, mỗi ounce vàng thế giới giao ngay giảm
     {
         id: 2,
         title:'Ổ dịch Covid-19 bùng phát trong nhà tù Hàn Quốc',
-        thumbnail: 'https://i1-vnexpress.vnecdn.net/2020/12/20/s1-3574-1608462137.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=fEik4W5qqyTJCx7GSSWtww',
+        thumbnail: 'https://st.baodatviet.vn/staticFile/Subject/2021/01/03/41816/vay-tien-qua-app-khong-khac-gi-boc-ho_3815684.jpg',
         category: 'Sức khỏe',
         author:'Vũ Hoàng',
         time:'20/12/2020, 18:03',
@@ -83,9 +83,31 @@ Cơ quan giám sát thuốc Hàn Quốc có khả năng sẽ phê duyệt sử d
         ]
     },
     {
+        id: 3,
+        title:`Ba Lan cảnh báo chiến tranh khi S-400 có mặt tại Belarus`,
+        thumbnail: 'https://st.baodatviet.vn/staticFile/Subject/2021/01/18/1610980605_145_1823636.jpg',
+        category: 'Chính trị',
+        author:'Tùng Dương',
+        time:'Thứ Tư, 20/01/2021 18:00',
+        content:
+`Việc Belarus công bố kế hoạch mua tổ hợp tên lửa phòng không tầm xa S-400 Triumf đã khiến cho nhiều quốc gia lân cận trong đó có Ba Lan lo ngại.
+Tư lệnh Lực lượng Phòng không Belarus - Thiếu tướng Igor Golub mới đây đã nói về các sư đoàn tên lửa phòng không bao gồm những hệ thống S-300, tuy nhiên Quân đội Belarus có thể sớm chuyển sang sử dụng S-400 tầm xa, cũng như các tổ hợp Pantsir-S tầm ngắn.
+Lời nói của ông Golub được đăng trên trang web của Bộ Quốc phòng nước này. Trước diễn biến trên, tờ WPolityce đã viết về phản ứng của người Ba Lan trước sự hiện diện sắp xảy ra của S-400 trong Quân đội Belarus.
+Theo nguồn tin của Bộ Quốc phòng Belarus, đã xuất hiện thông tin về việc chuẩn bị ký kết thỏa thuận cung cấp S-400. Thông tin về việc Minsk mua các hệ thống tên lửa phòng không mới nhất của Nga cho thấy mong muốn của chính quyền Belarus nhằm tăng cường không chỉ chính trị mà còn cả quan hệ quân sự với Nga, cũng như sự phụ thuộc ngày càng tăng của Belarus vào Liên bang Nga về mặt quân sự.
+Belarus không thể mua S-400 bằng ngân sách nhà nước, vì chi phí của một tổ hợp như vậy bằng chi tiêu cả năm của Bộ Quốc phòng Belarus. Do vậy rất có thể việc mua hàng sẽ được thực hiện bằng tín dụng.
+Trước sự hiện diện của các hệ thống tên lửa như vậy ở Kaliningrad - chúng được thiết kế để để bảo vệ cả Belarus, điều này khiến nhiều người đặt ra câu hỏi về sự cần thiết phải triển khai chúng trên lãnh thổ của Cộng hòa Belarus.
+Theo các chuyên gia, việc cung cấp S-400 cho Belarus sẽ có ý nghĩa nếu một căn cứ không quân của Nga được xây dựng ở đó - Ngoại trưởng Nga Sergei Lavrov đã nói về điều này vào năm 2019. S-400 sẽ bảo vệ cơ sở trên, như trường hợp của căn cứ Hmeimim của Nga ở Syria.
+Tờ báo Ba Lan tin rằng không chỉ Warsaw đang gặp nguy hiểm - việc triển khai các hệ thống tên lửa của Nga ở Belarus nên cảnh báo tới cả Vilnius và thậm chí cả Stockholm.
+Hiện tại trên trang web của Bộ Quốc phòng Litva đã xuất hiện thông tin về cuộc đàm phán của Thứ trưởng Margiris Abukevichus với Đại sứ Mỹ tại Vilnius - ông Robert Gilchrist về việc triển khai thường trực Tiểu đoàn 3 thuộc Sư đoàn bộ binh 3 của Hoa Kỳ. Đây có thể là một tín hiệu trực tiếp tới Nga và Belarus trong khuôn khổ liên lạc chiến lược.
+Tín hiệu tương tự cũng dành cho Thụy Điển. Bộ Ngoại giao nước này đã đăng một loạt video trên kênh Youtube của mình với tiêu đề "Khi chiến tranh bắt đầu."
+"Nếu những thông điệp của Thiếu tướng Golub trở thành sự thật, thì chiến tranh có thể đã đến gần", trang wPolityce của Ba Lan cảnh báo.`        ,
+        like:13,
+        comments: []
+    },
+    {
         id: 4,
         title:'Ronaldo vượt kỷ lục của Pele',
-        thumbnail: 'https://i1-thethao.vnecdn.net/2020/12/20/222549410-3315eb88-faa1-426a-9-8736-3847-1608459349.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=3RfRqmrMp_Io_fdmNrsk6w',
+        thumbnail: 'https://st.baodatviet.vn/staticFile/Subject/2021/01/03/361538/hai-la-dau-tuong-ban-18.000kg-cho-thuong-lai-dan-hao-hung_315350.jpg',
         category: 'Thể thao',
         author:'Kim Hòa',
         time:'Chủ nhật, 20/12/2020, 17:12',
@@ -334,6 +356,26 @@ let videos=[
         author:'Zingnews',
         url:'https://v-cdn.vietnamnetjsc.vn/media/ts/2021/01/03/12/04/3eb97c58-d5cd-4541-b0ae-1d5ac02484e7.mp4',
     },
+    {
+        id:10,
+        like:700,
+        thumbnail:'https://media1.nguoiduatin.vn/thumb_x992x558/media/ngac-kim-giang/2021/01/03/co-dau-huy-hon-vi-chu-re-mua-nham-size-noi-y1.jpg',
+        title:'Nhà gái hủy hôn vì chú rể mua nhầm size nội y của cô dâu',
+        content:'Khi quan khách đã có mặt đông đủ chỉ chờ cô dâu chú rể xuất hiện thì lại xảy ra sự cố bất ngờ.',
+        time:'Chủ nhật, 03/01/2021 | 21:38',
+        author:'NGƯỜI ĐƯA TIN',
+        url:'http://nguoiduatin.mediacdn.vn/208160615529951232/2021/1/3/co-dau-huy-hon-vi-chu-re-mua-nham-size-noi-y-1609684015445265751990.mp4',
+    },
+    {
+        id:11,
+        like:47,
+        thumbnail:'https://photo-baomoi.zadn.vn/w600_r3x2/2020_12_20_83_37398024/4c1e21acf9ef10b149fe.jpg',
+        title:'Miếng thịt lợn tươi sống co giật khiến người xem nổi da gà',
+        content:'Một hiện tượng lạ khiến cộng đồng mạng xôn xao và truyền tay nhau về 1 đoạn video ngắn cho thấy 1 miếng thịt lợn tươi có những hiện tượng kỳ lạ xảy ra.',
+        time:'20/12/2020 20:05',
+        author:'VTCNews',
+        url:'http://vnews.mediacdn.vn/197609248923488256/2020/12/26/13h-16089667786951753523953.mp4',
+    },
 ];
 
 let publishers=[
@@ -358,7 +400,7 @@ let publishers=[
         name:'VN Express',
         frequency:'40',
         cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/VnExpress_logo.png/1200px-VnExpress_logo.png',
-        avatar:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgtuWdRHbB2ZX1PPN40hhoqwKoTzpqLcvvqw&usqp=CAU',
+        avatar:'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/VnExpress_logo.png/1200px-VnExpress_logo.png',
         slogan:'Báo tiếng việt với lượng truy cập đông nhất',
         followers:'93k',
         address:'Tầng 5, Tòa nhà FPT Cầu Giấy, phố Duy Tân, Phường Dịch Vọng Hậu, Quận Cầu Giấy, Hà Nội',
