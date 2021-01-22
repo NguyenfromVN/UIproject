@@ -6,9 +6,10 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <!-- CSS -->
+    <!-- CSS --> 
     <link rel="stylesheet" href="css/profile.css" />
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/publisher.css">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -30,7 +31,6 @@
                 <p>BAO BAO</p>
             </a>
             <div class="header__right">
-                
                 <img src="img/Avatar.png" alt="" class="header__right__avatar" />
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
@@ -45,8 +45,13 @@
             </div>
         </div>
         <div class="header__bottom">
-     
-            
+            <div class="header__navbar">
+                <button type="button" class="btn btn-outline-dark">Hot</button>
+                <button type="button" class="btn btn-outline-dark">News</button>
+                <button type="button" class="btn btn-outline-dark">Video</button>
+                <button type="button" class="btn btn-outline-dark">Categories</button>
+              </div>
+      
             <div class="header__search" style="position: absolute;right: 0px; margin-top: 20px;">
                 <div class="search" >
                     <form  method="GET" class="form-inline" id="search-form" action="./searchPage.html">
@@ -141,17 +146,54 @@
             </div> 
         </a>
     </header>
-    <div>
-        <div >
-            <div class="title-video">
-                <img src="./img/Logo.png" class="title__logo">
-                <span class="title__text">Kết quả tìm kiếm</span>
-            </div>
-            <div class="container-content-video" id="body-search">
-            
+    <section>
+        <h1>
+            <img src="./img/publisherSlider.PNG" alt="">
+        </h1>
+        <div class="publisher__info">
+            <h3 >
+                <img src="./img/Noti.png" alt="">Thông tin tòa soạn
+            </h3>
+            <p>Tần suất ra báo: <span>30 bài/ngày</span> </p>
+            <p>Địa chỉ: <span>200 Hoàng DIệu, Q.4, Tp.HCM</span> </p>
+        </div>
+        <div class="info">
+            <h3 class="publisher">
+                <img src="./img/Noti.png" alt="">Danh mục phổ biến
+            </h3>
+            <div class="popular">
+                <button >
+                    Lao động - Việc làm
+                </button>
+                <button >
+                    Khoa học
+                </button>
+                <button >
+                    Khám phá thế giới
+                </button>  
             </div>
         </div>
-    </div>
+        <div class="newest">
+            <h3 class="publisher">
+                <img src="./img/Noti.png" alt="">Bài mới nhất
+            </h3>
+            <div>
+                <button>
+                    <img src="./img/Image.png" alt="">
+                    <p>Mường Lay qua ống kính du khác</p>
+                </button>
+                <button>
+                    <img src="./img/Image.png" alt="">
+                    <p>Mường Lay qua ống kính du khác</p>
+                </button>
+                <button>
+                    <img src="./img/Image.png" alt="">
+                    <p>Mường Lay qua ống kính du khác</p>
+                </button>
+            </div>
+        </div>
+
+    </section>
 
 </div>
 
