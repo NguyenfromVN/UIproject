@@ -189,12 +189,15 @@
       }
     }
     #image {
+      align-self: center;
         max-width: 100%;
         display: none;
+        margin-bottom: 10px;
     }
     #video {
       max-width: 100%;
       display: none;
+      margin-bottom: 10px;
     }
   }
 

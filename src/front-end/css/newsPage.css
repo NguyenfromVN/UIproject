@@ -147,12 +147,15 @@
   margin-left: 10px;
 }
 .newsPage .content_page #image {
+  align-self: center;
   max-width: 100%;
   display: none;
+  margin-bottom: 10px;
 }
 .newsPage .content_page #video {
   max-width: 100%;
   display: none;
+  margin-bottom: 10px;
 }
 .newsPage .ads {
   cursor: pointer;

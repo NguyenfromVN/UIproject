@@ -41,6 +41,7 @@ const content_hot = document.querySelector(".container-content-hot");
 const content_news = document.querySelector(".container-content-news");
 const content_video = document.querySelector("#contain-vide");
 const content_cate = document.querySelector(".container-cate");
+const content_cate_popup = document.querySelector("#cate-popup");
 
 
 const hot_content = document.querySelector(".hot");
@@ -52,9 +53,9 @@ const all_time_home = document.querySelector("#all-time-home");
 
 const testClick = (id, type) =>{
     console.log(id);
-    if (!type) 
+    if (!type)
         location.href = `./newsPage.html?id=${id}&v=f`;
-    else 
+    else
         location.href = `./newsPage.html?id=${id}&v=t`;
 }
 
@@ -261,6 +262,54 @@ const fil_all_video = ()=>{
 }
 
 const cate_content = document.querySelector("#cate-container");
+
+const showPopupCategory = (element) => {
+
+    const item = document.createElement('div');
+    item.innerHTML = `<div class="title"">
+            <img src="./img/Logo.png" class="title__logo">
+            <span class="title__text">${element}</span>
+            <img src="./img/Star.png" class="title__logo">
+            <span class="close" id = "cls-btn">&times;</span>
+            <div id = "contain-popup-item" class = "wrapper"></div>
+        </div>`
+    content_cate_popup.innerHTML = `<div class="modal-content">
+        </div>`
+    document.querySelector(".modal-content").appendChild(item)
+    API.categoryData.getAllNewsByCategory(element).forEach(element=>{
+        const item1 = document.createElement('div');
+        item1.classList.add("cate__item");
+        item1.innerHTML = `<img src="${element.thumbnail}" alt="" class="cate__item__img">
+            <div class="cate__item____content">
+                <div class="cate__item__title">
+                ${element.title}
+                </div>
+                <div class="cate__item__meta">
+                    <span class="detail">
+                        ${element.author}
+                    </span>
+                    <span class="detail-middle">
+                        ${element.time}
+                    </span>
+                    <span class="detail">
+                        3 liên quan
+                    </span>
+                </div>
+            </div>`
+        item1.onclick = function(){
+            testClick(element.id);
+        }
+        document.querySelector("#contain-popup-item").appendChild(item1);
+    })
+
+
+
+    content_cate_popup.style.display = "block"
+    document.querySelector("#cls-btn").onclick = () => {
+        content_cate_popup.style.display = "none"
+    }
+}
+
 const fill_cate = ()=>{
     const cate_data  = ["Thời sự",
     "Giao thông",
@@ -275,7 +324,7 @@ const fill_cate = ()=>{
     cate_data.forEach(element => {
         const item = document.createElement('div');
             item.classList.add("container-cate__content");
-            item.innerHTML = `<div class="title">
+            item.innerHTML = `<div class="title"">
             <img src="./img/Logo.png" class="title__logo">
             <span class="title__text">${element}</span>
             <img src="./img/Star.png" class="title__logo">
@@ -300,18 +349,21 @@ const fill_cate = ()=>{
                     </span>
                 </div>
             </div>`
-            item.onclick = function(){
+            item1.onclick = function(){
                 testClick(element.id);
             }
         item.appendChild(item1);
         })
+        item.onclick = () => {
+            showPopupCategory(element)
+        }
         if(API.categoryData.getAllNewsByCategory(element).length===0){
             item.style.display = "none"
         }
 
         cate_content.appendChild(item)
         });
-     
+
 }
 
 const search_form = document.querySelector("#search-form")
@@ -375,10 +427,10 @@ videos_btn.addEventListener('click', e=>{
     content_news.style.display = "none";
     content_video.style.display = "grid";
 content_cate.style.display = "none";
-    
+
     })
 
-    
+
     cate_btn.addEventListener('click', e=>{
     hot_btn.classList.remove("active-btn");
     news_btn.classList.remove("active-btn");
@@ -388,12 +440,12 @@ content_cate.style.display = "none";
     content_news.style.display = "none";
     content_video.style.display = "none";
 content_cate.style.display = "grid";
-    
+
     })
 
 
-    
-    
+
+
 
 
 
